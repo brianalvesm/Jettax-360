@@ -1,3 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap");
+body {
+  font-family: "Exo", sans-serif;
+}
+body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Exo", sans-serif;
+}
+
 .flex {
   display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.grid-x.align-middle {
+  height: 100%;
+}
+
+.sec {
+  padding: 100px 0;
+}
+.sec--hero {
+  display: flex;
+  background-image: url(" ");
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #002869;
+  color: white;
+  height: 800px;
+}
+.sec--hero .title {
+  font-family: "Exo 2";
+  line-height: 1.1;
 }

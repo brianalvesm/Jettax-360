@@ -2,6 +2,39 @@
 @import "mixins"
 @import "variables"
 
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap')
+
+body
+	font-family: 'Exo', sans-serif
+	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+		font-family: 'Exo', sans-serif
+
 // Helpers
 .flex
 	display: flex
+
+.wrap
+	flex-wrap: wrap
+
+.grid-container
+	width: 100%
+
+.grid-x.align-middle
+	height: 100%
+
+// Sections
+.sec
+	padding: 100px 0
+	&--hero
+		display: flex
+		background:
+			image: url(' ')
+			position: center
+			repeat: repeat
+			color: $blue-dark
+		color: white
+		height: 800px
+		.title
+			font-family: 'Exo 2'
+			line-height: 1.1
