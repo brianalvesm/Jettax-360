@@ -5,7 +5,7 @@
   justify-content: center;
   height: 50px;
   min-width: 215px;
-  padding: 15px 22px;
+  padding: 0 22px;
   font-weight: 900;
   font-size: 16px;
   border-radius: 25px;
@@ -29,6 +29,31 @@
   }
 }
 
+.header {
+  margin-top: 22px;
+}
+.header .btn {
+  height: 40px;
+  padding: 0 17px;
+  min-width: 138px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.header .btns-wrap {
+  gap: 8px;
+}
+.header .navigation {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+.header .navigation a {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 body {
   font-family: "Exo", sans-serif;
 }
@@ -44,6 +69,10 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   flex-wrap: wrap;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .grid-container {
   width: 100%;
 }
@@ -52,14 +81,24 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   height: 100%;
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header-nav-wrap {
+  gap: 40px;
+}
+
 .sec {
   padding: 100px 0;
 }
 .sec--hero {
   display: flex;
-  background-image: url(" ");
-  background-position: center;
-  background-repeat: repeat;
+  background-image: url("../images/hero-bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #002869;
   color: white;
   height: 800px;

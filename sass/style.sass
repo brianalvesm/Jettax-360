@@ -18,11 +18,21 @@ body
 .wrap
 	flex-wrap: wrap
 
+.space-between
+	justify-content: space-between
+
 .grid-container
 	width: 100%
 
 .grid-x.align-middle
 	height: 100%
+
+.header
+	position: absolute
+	width: 100%
+
+.header-nav-wrap
+	gap: 40px
 
 // Sections
 .sec
@@ -30,9 +40,10 @@ body
 	&--hero
 		display: flex
 		background:
-			image: url(' ')
-			position: center
-			repeat: repeat
+			image: url('../images/hero-bg.jpg')
+			position: top center
+			size: cover
+			repeat: no-repeat
 			color: $blue-dark
 		color: white
 		height: 800px
