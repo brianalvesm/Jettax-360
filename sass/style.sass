@@ -1,15 +1,16 @@
 // Sass
-@import "mixins"
-@import "variables"
-@import "components"
-
-// Typography
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap')
 
 body
 	font-family: 'Exo', sans-serif
 	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
 		font-family: 'Exo', sans-serif
+
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap')
+
+@import "mixins"
+@import "variables"
+@import "components"
 
 // Helpers
 .flex
@@ -26,13 +27,6 @@ body
 
 .grid-x.align-middle
 	height: 100%
-
-.header
-	position: absolute
-	width: 100%
-
-.header-nav-wrap
-	gap: 40px
 
 // Sections
 .sec
