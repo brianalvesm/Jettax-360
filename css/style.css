@@ -89,6 +89,15 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .footer .navigation {
   gap: 35px;
 }
+@media (max-width: 40rem) {
+  .footer .contact-wrap,
+.footer .social-wrap {
+    margin-top: 35px;
+  }
+  .footer .navigation {
+    display: none;
+  }
+}
 
 .copyright {
   background-color: #0160A7;
@@ -111,6 +120,12 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 
 .space-between {
   justify-content: space-between;
+}
+
+@media (max-width: 40rem) {
+  .flex-column-small-only {
+    flex-direction: column;
+  }
 }
 
 .grid-container {

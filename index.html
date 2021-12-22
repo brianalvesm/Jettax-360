@@ -25,13 +25,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   </head>
   <body>
-    <header class="header ">
+    <header class="header">
       <div class="grid-container">
         <div class="grid-x align-middle">
           <div class="cell large-12 flex space-between">
             <img src="images/logo.svg" alt="Jettax 360 Logo">
-            <div class="flex header-nav-wrap">
-              <nav class="navigation">
+            <div class="title-bar" data-responsive-toggle="header-menu" data-hide-for="medium">
+              <button class="menu-icon" type="button" data-toggle="header-menu"></button>
+            </div>
+            <div class="flex header-nav-wrap" id="header-menu">
+              <nav class="navigation wrap">
                 <a href="">O Jettax 360</a>
                 <a href="">Soluções</a>
                 <a href="">Como Funciona</a>
@@ -71,7 +74,7 @@
             <img src="images/logo-footer.svg" alt="Jettax 360 Logo">
           </div>
           <div class="cell large-7">
-            <nav class="navigation">
+            <nav class="navigation wrap">
               <a href="">O Jettax 360</a>
               <a href="">Soluções</a>
               <a href="">Como Funciona</a>
@@ -91,8 +94,8 @@
             CEP: 05001-200</p>
           </div>
           <div class="cell large-7">
-            <div class="flex wrap align-middle space-between">
-              <div class="contact-wrap">
+            <div class="flex wrap align-middle space-between flex-column-small-only">
+              <div class="contact-wrap wrap">
                 <span>E-mail:</span> comercial@jettax.com.br<br>
                 <span>Telefone:</span> +55 11 3392-1347<br>
                 <span>Whatsapp:</span> +55 11 98820-9387
