@@ -28,13 +28,15 @@
     <header class="header">
       <div class="grid-container">
         <div class="grid-x align-middle">
-          <div class="cell large-12 flex space-between">
-            <img src="images/logo.svg" alt="Jettax 360 Logo">
-            <div class="title-bar" data-responsive-toggle="header-menu" data-hide-for="medium">
-              <button class="menu-icon" type="button" data-toggle="header-menu"></button>
+          <div class="cell large-12 flex space-between flex-column-small-only">
+            <div class="flex space-between">
+              <img src="images/logo.svg" alt="Jettax 360 Logo">
+              <div class="title-bar" data-responsive-toggle="header-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="header-menu"></button>
+              </div>
             </div>
-            <div class="flex header-nav-wrap" id="header-menu">
-              <nav class="navigation wrap">
+            <div class="flex header-nav-wrap flex-column-small-only" id="header-menu">
+              <nav class="navigation wrap flex-column-small-only">
                 <a href="">O Jettax 360</a>
                 <a href="">Soluções</a>
                 <a href="">Como Funciona</a>
@@ -46,6 +48,27 @@
                 <a class="btn btn--style1" href="">Entrar</a>
                 <a class="btn btn--style2" href="">Cadastre-se</a>
               </div>
+
+              <div class="show-small-only">
+                <p class="address">Av. Francisco Matarazzo,1752<br>
+                  13° andar – Conj. 1306<br>
+                  Água Branca – São Paulo/SP<br>
+                CEP: 05001-200</p>
+
+                <div class="flex wrap align-middle space-between flex-column-small-only">
+                  <div class="contact-wrap wrap">
+                    <span>E-mail:</span> comercial@jettax.com.br<br>
+                    <span>Telefone:</span> +55 11 3392-1347<br>
+                    <span>Whatsapp:</span> +55 11 98820-9387
+                  </div>
+                  <div class="social-wrap">
+                    <img src="images/icon-facebook.svg" alt="Facebook">
+                    <img src="images/icon-twitter.svg" alt="twitter">
+                    <img src="images/icon-instagram.svg" alt="instagram">
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -70,7 +93,7 @@
     <footer class="footer">
       <div class="grid-container">
         <div class="grid-x align-middle">
-          <div class="cell large-5">
+          <div class="cell large-5 align-center-small">
             <img src="images/logo-footer.svg" alt="Jettax 360 Logo">
           </div>
           <div class="cell large-7">
@@ -113,7 +136,7 @@
     <div class="copyright">
       <div class="grid-container">
         <div class="grid-x">
-          <div class="cell">
+          <div class="cell align-center-small">
             <span>©  Jettax 360   - All Rights Reserved</span>
           </div>
         </div>

@@ -27,7 +27,7 @@
 .header
 	position: absolute
 	width: 100%
-	margin-top: 22px
+	padding-top: 22px
 	.btn
 		height: 40px
 		padding: 0 17px
@@ -36,9 +36,24 @@
 		text-transform: uppercase
 	.btns-wrap
 		gap: 8px
+	.title-bar
+		background: transparent
+	&.active
+		background-color: $blue-dark
+		.title-bar .menu-icon:hover::after,
+		.title-bar .menu-icon::after
+			background: $blue-light
+			box-shadow: 0 7px 0 $blue-light, 0 14px 0 $blue-light
+	@media (max-width: 40rem)
+		padding-bottom: 50px
+		.btn
+			min-width: 276px
+			margin: auto
 
 .header-nav-wrap
 	gap: 40px
+	@media (max-width: 40rem)
+		background-color: $blue-dark 
 
 .navigation
 	display: flex
@@ -49,30 +64,46 @@
 		font-size: 12px
 		font-weight: 700
 		text-transform: uppercase
+	@media (max-width: 40rem)
+		gap: 10px
+		align-items: baseline
+		margin-top: 50px
+		a
+			width: 100%
+			font-size: 18px
+			border-bottom: 1px solid $blue-light
 
 // Footer
 .footer
 	background-color: $blue-dark
 	padding: 80px 0 100px
-	.address
-		color: #f5f5f5
-		font-weight: 500
-		font-size: 16px
-		margin: 40px auto 0
-	.contact-wrap
-		color: $blue-medium
-		font-weight: 600
-		font-size: 14px
-		span
-			color: $blue-light
 	.navigation
 		gap: 35px
 	@media (max-width: 40rem)
-		.contact-wrap,
-		.social-wrap
-			margin-top: 35px
+		padding: 80px 0 40px
 		.navigation
 			display: none
+
+.address
+	color: #f5f5f5
+	font-weight: 500
+	font-size: 16px
+.footer .address	
+	margin: 40px auto 0
+
+.contact-wrap
+	color: $blue-medium
+	font-weight: 600
+	font-size: 14px
+	span
+		color: $blue-light
+
+@media (max-width: 40rem)
+	.address
+		text-align: center
+	.contact-wrap,
+	.social-wrap
+		margin-top: 35px
 
 .copyright
 	background-color: $blue-medium
@@ -82,3 +113,6 @@
 		align-items: center
 		color: white
 		font-weight: 500
+		@media (max-width: 40rem)
+			margin: auto
+			width: auto
