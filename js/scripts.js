@@ -5,6 +5,6 @@ $('.title-bar').click( function() {
 });
 
 $('.sec--solutions .card').click( function() {
-	$(this).toggleClass('active');
+	$(this).addClass('active');
 	$(this).siblings().removeClass('active');
 });

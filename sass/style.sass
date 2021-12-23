@@ -70,11 +70,18 @@ body
 			margin-bottom: 18px
 		img
 			position: absolute
-		@media (max-width: 40rem)
+		@media (max-width: 64rem)
 			img
 				position: relative
 	&--solutions
-		background-color: #F5F3F3
+		background:
+			color: #F5F3F3
+			image: url('../images/solutions-bg.svg')
+			repeat: no-repeat
+			size: auto
+			position: bottom right
+		@media (max-width: 64rem)
+			background-image: none
 		.title
 			color: $blue-dark
 			margin-bottom: 68px
