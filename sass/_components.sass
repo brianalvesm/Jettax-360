@@ -137,3 +137,46 @@
 		@media (max-width: 40rem)
 			margin: auto
 			width: auto
+
+.cards-wrap
+	display: flex
+	flex-direction: column
+	gap: 58px
+	.card
+		border-radius: 20px
+		border: none
+		box-shadow: 0 3px 24px rgba(black, 0.1)
+		padding: 20px 58px 25px
+		max-width: 400px
+		background-color: #F5F3F3
+		position: relative
+		overflow: visible
+		svg
+			content: ''
+			display: block
+			position: absolute
+			z-index: 1
+			top: 0
+			left: -30px
+			width: 60px
+			height: 60px
+			background-repeat: no-repeat
+			background-size: contain
+			rect
+				fill: #A3E3FF
+		.card-title
+			font-weight: 700
+			font-size: 24px
+			color: #A3E3FF
+		span
+			font-size: 14px
+			color: #353434
+		&.active
+			background-color: white
+			svg
+				rect
+					fill: $blue-light
+			.card-title
+				color: $blue-dark
+			span
+				color: $blue-medium

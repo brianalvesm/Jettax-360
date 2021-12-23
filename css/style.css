@@ -195,6 +195,58 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   }
 }
 
+.cards-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+.cards-wrap .card {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px 58px 25px;
+  max-width: 400px;
+  background-color: #F5F3F3;
+  position: relative;
+  overflow: visible;
+}
+.cards-wrap .card svg {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cards-wrap .card svg rect {
+  fill: #A3E3FF;
+}
+.cards-wrap .card .card-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #A3E3FF;
+}
+.cards-wrap .card span {
+  font-size: 14px;
+  color: #353434;
+}
+.cards-wrap .card.active {
+  background-color: white;
+}
+.cards-wrap .card.active svg rect {
+  fill: #00AFFA;
+}
+.cards-wrap .card.active .card-title {
+  color: #002869;
+}
+.cards-wrap .card.active span {
+  color: #0160A7;
+}
+
 .flex {
   display: flex;
 }
@@ -251,6 +303,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 }
 .sec--hero .title {
   font-family: "Exo 2";
+  font-size: 42px;
   line-height: 1.1;
 }
 .sec--hero .description {
@@ -273,4 +326,11 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   .sec--about img {
     position: relative;
   }
+}
+.sec--solutions {
+  background-color: #F5F3F3;
+}
+.sec--solutions .title {
+  color: #002869;
+  margin-bottom: 68px;
 }
