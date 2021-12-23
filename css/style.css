@@ -246,6 +246,9 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .cards-wrap .card.active span {
   color: #0160A7;
 }
+.cards-wrap .card:hover {
+  cursor: pointer;
+}
 
 .flex {
   display: flex;
