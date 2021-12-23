@@ -6,6 +6,11 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   font-family: "Exo", sans-serif;
 }
 
+.title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -33,6 +38,29 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 @media (max-width: 40rem) {
   .btns-wrap {
     flex-direction: column;
+  }
+}
+
+.sec-name {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.sec-name:after {
+  content: "";
+  display: block;
+  width: 290px;
+  border-bottom: 1px solid #00AFFA;
+  position: absolute;
+  right: -310px;
+  top: 50%;
+}
+@media (max-width: 40rem) {
+  .sec-name:after {
+    width: 100%;
+    right: -200px;
   }
 }
 
@@ -229,4 +257,20 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   font-size: 18px;
   font-weight: 500;
   margin: 30px auto 45px;
+}
+.sec--about {
+  background-color: #0160A7;
+  color: white;
+  position: relative;
+}
+.sec--about .title {
+  margin-bottom: 18px;
+}
+.sec--about img {
+  position: absolute;
+}
+@media (max-width: 40rem) {
+  .sec--about img {
+    position: relative;
+  }
 }

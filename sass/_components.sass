@@ -1,4 +1,7 @@
 // Components
+.title
+	font-size: 32px
+	font-weight: 800
 
 .btn
 	display: inline-flex
@@ -22,6 +25,24 @@
 	gap: 20px
 	@media (max-width: 40rem)
 		flex-direction: column
+
+.sec-name
+	text-transform: uppercase
+	letter-spacing: 5px
+	position: relative
+	display: inline-block
+	margin-bottom: 50px
+	&:after
+		content: ""
+		display: block
+		width: 290px
+		border-bottom: 1px solid $blue-light
+		position: absolute
+		right: -310px
+		top: 50%
+		@media (max-width: 40rem)
+			width: 100%
+			right: -200px
 
 // Header
 .header
