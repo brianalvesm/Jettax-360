@@ -1,6 +1,6 @@
 // Sass
 
-body
+body.jettax
 	font-family: 'Exo', sans-serif
 	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
 		font-family: 'Exo', sans-serif
@@ -29,11 +29,6 @@ body
 .align-center-small
 	@media (max-width: 40rem)
 		text-align: center
-
-.show-small-only
-	display: none
-	@media (max-width: 40rem)
-		display: block
 
 .grid-container
 	width: 100%
@@ -81,7 +76,14 @@ body
 			size: auto
 			position: bottom right
 		@media (max-width: 64rem)
-			background-image: none
+			background:
+				image: url('../images/solutions-bg-small.svg')
+				position: bottom center
+			padding-bottom: 268px
 		.title
 			color: $blue-dark
 			margin-bottom: 68px
+	&--howitworks
+		background-color: $blue-dark
+		.title
+			color: white

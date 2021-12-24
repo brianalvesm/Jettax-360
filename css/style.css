@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap");
-body {
+body.jettax {
   font-family: "Exo", sans-serif;
 }
-body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, body h3, body h4, body h5, body h6 {
+body.jettax .h1, body.jettax .h2, body.jettax .h3, body.jettax .h4, body.jettax .h5, body.jettax .h6, body.jettax h1, body.jettax h2, body.jettax h3, body.jettax h4, body.jettax h5, body.jettax h6 {
   font-family: "Exo", sans-serif;
 }
 
@@ -47,6 +47,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   position: relative;
   display: inline-block;
   margin-bottom: 50px;
+  color: #00AFFA;
 }
 .sec-name:after {
   content: "";
@@ -251,6 +252,54 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   cursor: pointer;
 }
 
+.steps {
+  gap: 6px;
+  margin-top: 90px;
+}
+.steps .card-steps {
+  width: 324px;
+  height: 324px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+  color: #00AFFA;
+  position: relative;
+}
+.steps .card-steps:before {
+  position: absolute;
+  top: -50px;
+  left: 37px;
+  content: "00";
+  font-size: 62px;
+  font-weight: 900;
+  display: block;
+  color: #00AFFA;
+}
+.steps .card-steps:nth-child(1):before {
+  content: "01";
+}
+.steps .card-steps:nth-child(2):before {
+  content: "02";
+}
+.steps .card-steps:nth-child(3):before {
+  content: "03";
+}
+.steps .card-steps:nth-child(4):before {
+  content: "04";
+}
+.steps .step-title {
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+}
+.steps .step-title img {
+  padding-left: 20px;
+}
+
 .flex {
   display: flex;
 }
@@ -272,15 +321,6 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 @media (max-width: 40rem) {
   .align-center-small {
     text-align: center;
-  }
-}
-
-.show-small-only {
-  display: none;
-}
-@media (max-width: 40rem) {
-  .show-small-only {
-    display: block;
   }
 }
 
@@ -340,10 +380,18 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 }
 @media (max-width: 64rem) {
   .sec--solutions {
-    background-image: none;
+    background-image: url("../images/solutions-bg-small.svg");
+    background-position: bottom center;
+    padding-bottom: 268px;
   }
 }
 .sec--solutions .title {
   color: #002869;
   margin-bottom: 68px;
+}
+.sec--howitworks {
+  background-color: #002869;
+}
+.sec--howitworks .title {
+  color: white;
 }

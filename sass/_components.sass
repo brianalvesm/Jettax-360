@@ -32,6 +32,7 @@
 	position: relative
 	display: inline-block
 	margin-bottom: 50px
+	color: $blue-light
 	&:after
 		content: ""
 		display: block
@@ -183,3 +184,51 @@
 				color: $blue-medium
 		&:hover
 			cursor: pointer
+
+.steps
+	gap: 6px
+	margin-top: 90px
+	.card-steps
+		width: 324px
+		height: 324px
+		background-color: white
+		border-radius: 20px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding: 50px
+		gap: 50px
+		color: $blue-light
+		position: relative
+		&:before
+			position: absolute
+			top: -50px
+			left: 37px
+			content: "00"
+			font-size: 62px
+			font-weight: 900
+			display: block
+			color: $blue-light
+		&:nth-child(1):before
+			content: "01"
+		&:nth-child(2):before
+			content: "02"
+		&:nth-child(3):before
+			content: "03"
+		&:nth-child(4):before
+			content: "04"
+	.step-title
+		font-size: 20px
+		font-weight: 800
+		position: relative
+		img
+			padding-left: 20px
+		// &:after
+		// 	position: absolute
+		// 	right: 70px
+		// 	top: 8px
+		// 	content: ''
+		// 	display: block
+		// 	width: 24px
+		// 	height: 14px
+		// 	background-image: url('../images/arrow-right.svg')
