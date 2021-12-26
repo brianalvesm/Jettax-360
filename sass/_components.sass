@@ -43,7 +43,8 @@
 		top: 50%
 		@media (max-width: 40rem)
 			width: 100%
-			right: -200px
+			right: 0
+			top: 25px
 
 // Header
 .header
@@ -184,7 +185,13 @@
 				color: $blue-medium
 		&:hover
 			cursor: pointer
+	@media (max-width: 40rem)
+		gap: 25px
+		margin-bottom: 50px
+		.card
+			padding: 20px 20px 20px 58px
 
+// Componente: "Como Funciona" - Página inicial
 .steps
 	gap: 6px
 	margin-top: 90px
@@ -195,8 +202,8 @@
 		border-radius: 20px
 		display: flex
 		flex-direction: column
-		justify-content: center
-		padding: 50px
+		justify-content: flex-start
+		padding: 100px 50px 50px
 		gap: 50px
 		color: $blue-light
 		position: relative
@@ -209,26 +216,31 @@
 			font-weight: 900
 			display: block
 			color: $blue-light
-		&:nth-child(1):before
+		&.step-01:before
 			content: "01"
-		&:nth-child(2):before
+		&.step-02:before
 			content: "02"
-		&:nth-child(3):before
+		&.step-03:before
 			content: "03"
-		&:nth-child(4):before
+		&.step-04:before
 			content: "04"
 	.step-title
 		font-size: 20px
 		font-weight: 800
 		position: relative
-		img
-			padding-left: 20px
-		// &:after
-		// 	position: absolute
-		// 	right: 70px
-		// 	top: 8px
-		// 	content: ''
-		// 	display: block
-		// 	width: 24px
-		// 	height: 14px
-		// 	background-image: url('../images/arrow-right.svg')
+		display: flex
+		align-items: center
+		gap: 20px
+	@media (max-width: 64rem)
+		.card-steps
+			width: 100%
+			padding: 100px 25px 25px
+			gap: 25px
+
+.owl-howitworks.owl-carousel .owl-stage-outer
+	overflow: visible
+
+.slider
+	display: none
+	@media (max-width: 64rem)
+		display: block

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap");
-body.jettax {
+body {
   font-family: "Exo", sans-serif;
 }
-body.jettax .h1, body.jettax .h2, body.jettax .h3, body.jettax .h4, body.jettax .h5, body.jettax .h6, body.jettax h1, body.jettax h2, body.jettax h3, body.jettax h4, body.jettax h5, body.jettax h6 {
+body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Exo", sans-serif;
 }
 
@@ -61,7 +61,8 @@ body.jettax .h1, body.jettax .h2, body.jettax .h3, body.jettax .h4, body.jettax 
 @media (max-width: 40rem) {
   .sec-name:after {
     width: 100%;
-    right: -200px;
+    right: 0;
+    top: 25px;
   }
 }
 
@@ -251,6 +252,15 @@ body.jettax .h1, body.jettax .h2, body.jettax .h3, body.jettax .h4, body.jettax 
 .cards-wrap .card:hover {
   cursor: pointer;
 }
+@media (max-width: 40rem) {
+  .cards-wrap {
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  .cards-wrap .card {
+    padding: 20px 20px 20px 58px;
+  }
+}
 
 .steps {
   gap: 6px;
@@ -263,8 +273,8 @@ body.jettax .h1, body.jettax .h2, body.jettax .h3, body.jettax .h4, body.jettax 
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 50px;
+  justify-content: flex-start;
+  padding: 100px 50px 50px;
   gap: 50px;
   color: #00AFFA;
   position: relative;
@@ -279,25 +289,45 @@ body.jettax .h1, body.jettax .h2, body.jettax .h3, body.jettax .h4, body.jettax 
   display: block;
   color: #00AFFA;
 }
-.steps .card-steps:nth-child(1):before {
+.steps .card-steps.step-01:before {
   content: "01";
 }
-.steps .card-steps:nth-child(2):before {
+.steps .card-steps.step-02:before {
   content: "02";
 }
-.steps .card-steps:nth-child(3):before {
+.steps .card-steps.step-03:before {
   content: "03";
 }
-.steps .card-steps:nth-child(4):before {
+.steps .card-steps.step-04:before {
   content: "04";
 }
 .steps .step-title {
   font-size: 20px;
   font-weight: 800;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.steps .step-title img {
-  padding-left: 20px;
+@media (max-width: 64rem) {
+  .steps .card-steps {
+    width: 100%;
+    padding: 100px 25px 25px;
+    gap: 25px;
+  }
+}
+
+.owl-howitworks.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+.slider {
+  display: none;
+}
+@media (max-width: 64rem) {
+  .slider {
+    display: block;
+  }
 }
 
 .flex {
@@ -390,6 +420,7 @@ body.jettax .h1, body.jettax .h2, body.jettax .h3, body.jettax .h4, body.jettax 
   margin-bottom: 68px;
 }
 .sec--howitworks {
+  overflow: hidden;
   background-color: #002869;
 }
 .sec--howitworks .title {
