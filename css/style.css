@@ -330,6 +330,37 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   }
 }
 
+.tables-wrap {
+  flex-direction: column;
+  margin: 50px auto;
+}
+@media (min-width: 40rem) {
+  .tables-wrap {
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.1);
+  }
+}
+
+table {
+  overflow: hidden;
+}
+table thead {
+  background-color: #0160A7;
+  color: white;
+  height: 90px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+table th, table td {
+  padding: 0 60px;
+}
+table td {
+  height: 100px;
+}
+
 .flex {
   display: flex;
 }

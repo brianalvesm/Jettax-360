@@ -244,3 +244,26 @@
 	display: none
 	@media (max-width: 64rem)
 		display: block
+
+.tables-wrap
+	flex-direction: column
+	margin: 50px auto
+	@media (min-width: 40rem)
+		flex-direction: row
+		border-radius: 20px
+		overflow: hidden
+		box-shadow: 0 3px 24px rgba(black, 0.1)
+
+table
+	overflow: hidden
+	thead
+		background-color: $blue-medium
+		color: white
+		height: 90px
+		font-size: 24px
+		font-weight: 700
+		text-transform: uppercase
+	th, td
+		padding: 0 60px
+	td
+		height: 100px
