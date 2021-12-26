@@ -13,12 +13,16 @@
 	font-weight: 900
 	font-size: 16px
 	border-radius: 25px
+	@include transition(0.3s)
 	&--style1
 		border: 1px solid $blue-light
 		color: $blue-light
 	&--style2
 		background-color: $blue-light
 		color: white
+		&:hover
+			background-color: $blue-medium
+			color: white
 
 .btns-wrap
 	display: flex

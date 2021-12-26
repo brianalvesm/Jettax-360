@@ -21,6 +21,11 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   font-weight: 900;
   font-size: 16px;
   border-radius: 25px;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .btn--style1 {
   border: 1px solid #00AFFA;
@@ -28,6 +33,10 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 }
 .btn--style2 {
   background-color: #00AFFA;
+  color: white;
+}
+.btn--style2:hover {
+  background-color: #0160A7;
   color: white;
 }
 
