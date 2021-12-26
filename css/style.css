@@ -359,6 +359,23 @@ table th, table td {
 }
 table td {
   height: 100px;
+  position: relative;
+  padding: 0 90px;
+}
+table td:before {
+  position: absolute;
+  top: 44px;
+  left: 60px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 12px;
+  background-image: url("../images/x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+table td.check:before {
+  background-image: url("../images/check.svg");
 }
 
 .flex {
@@ -391,6 +408,10 @@ table td {
 
 .grid-x.align-middle {
   height: 100%;
+}
+
+.margin-left {
+  margin-left: 40px;
 }
 
 .sec {
@@ -427,6 +448,16 @@ table td {
 .sec--about img {
   position: absolute;
 }
+.sec--about .scroll-button {
+  position: absolute;
+  display: block;
+  top: -32px;
+  width: 50px;
+  height: 64px;
+}
+.sec--about .scroll-button:hover {
+  cursor: pointer;
+}
 @media (max-width: 64rem) {
   .sec--about img {
     position: relative;
@@ -456,4 +487,14 @@ table td {
 }
 .sec--howitworks .title {
   color: white;
+}
+.sec--table {
+  background-color: #F5F3F3;
+}
+.sec--table .title,
+.sec--table .sec-name {
+  color: #002869;
+}
+.sec--table .sec-name:after {
+  border-bottom: 1px solid #002869;
 }

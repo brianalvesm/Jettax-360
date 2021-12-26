@@ -254,6 +254,7 @@
 		overflow: hidden
 		box-shadow: 0 3px 24px rgba(black, 0.1)
 
+// Componente: "Tabela Comparativa" - Página inicial
 table
 	overflow: hidden
 	thead
@@ -267,3 +268,18 @@ table
 		padding: 0 60px
 	td
 		height: 100px
+		position: relative
+		padding: 0 90px
+		&:before
+			position: absolute
+			top: 44px
+			left: 60px
+			content: ""
+			display: block
+			width: 14px
+			height: 12px
+			background-image: url('../images/x.svg')
+			background-repeat: no-repeat
+			background-position: center
+		&.check:before
+			background-image: url('../images/check.svg')
