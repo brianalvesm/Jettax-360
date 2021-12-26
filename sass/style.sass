@@ -38,6 +38,8 @@ body
 
 .margin-left
 	margin-left: 40px
+	@media (max-width: 40rem)
+		margin-left: 20px
 
 // Sections
 .sec
@@ -81,7 +83,7 @@ body
 				position: relative
 	&--solutions
 		background:
-			color: #F5F3F3
+			color: $gray
 			image: url('../images/solutions-bg.svg')
 			repeat: no-repeat
 			size: auto
@@ -100,10 +102,43 @@ body
 		.title
 			color: white
 	&--table
-		background:
-			color: #F5F3F3
+		background-color: $gray
 		.title,
 		.sec-name
 			color: $blue-dark
 		.sec-name:after
 			border-bottom: 1px solid $blue-dark
+	&--clients
+		padding: 100px 0 150px
+		background-color: $blue-medium
+		.title
+			color: white
+	&--contact
+		background-color: $gray
+		padding: 0
+		.padding
+			padding: 140px 0
+		.grid-container
+			position: relative
+			img
+				position: absolute
+				bottom: 0
+				right: 0
+		.title,
+		.description
+			color: $blue-dark
+		.description
+			font-size: 26px
+			font-weight: 500
+		.btns-wrap
+			margin-top: 45px
+		@media (max-width: 40rem)
+			.grid-container img
+				position: relative
+			.title,
+			.description
+				text-align: center
+			.margin-left
+				margin-left: 0
+			.padding
+				padding: 90px 45px 45px

@@ -253,6 +253,7 @@
 		border-radius: 20px
 		overflow: hidden
 		box-shadow: 0 3px 24px rgba(black, 0.1)
+		margin: 50px 0 50px 20px
 
 // Componente: "Tabela Comparativa" - Página inicial
 table
@@ -283,3 +284,12 @@ table
 			background-position: center
 		&.check:before
 			background-image: url('../images/check.svg')
+
+// Componente: "Clientes" - Página inicial
+.clients-wrap
+	width: 460px
+	gap: 80px
+	@media (max-width: 40rem)
+		width: 100%
+		gap: 60px
+		padding: 40px 20px 0 

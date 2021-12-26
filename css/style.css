@@ -340,6 +340,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 3px 24px rgba(0, 0, 0, 0.1);
+    margin: 50px 0 50px 20px;
   }
 }
 
@@ -378,6 +379,18 @@ table td.check:before {
   background-image: url("../images/check.svg");
 }
 
+.clients-wrap {
+  width: 460px;
+  gap: 80px;
+}
+@media (max-width: 40rem) {
+  .clients-wrap {
+    width: 100%;
+    gap: 60px;
+    padding: 40px 20px 0;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -412,6 +425,11 @@ table td.check:before {
 
 .margin-left {
   margin-left: 40px;
+}
+@media (max-width: 40rem) {
+  .margin-left {
+    margin-left: 20px;
+  }
 }
 
 .sec {
@@ -497,4 +515,52 @@ table td.check:before {
 }
 .sec--table .sec-name:after {
   border-bottom: 1px solid #002869;
+}
+.sec--clients {
+  padding: 100px 0 150px;
+  background-color: #0160A7;
+}
+.sec--clients .title {
+  color: white;
+}
+.sec--contact {
+  background-color: #F5F3F3;
+  padding: 0;
+}
+.sec--contact .padding {
+  padding: 140px 0;
+}
+.sec--contact .grid-container {
+  position: relative;
+}
+.sec--contact .grid-container img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.sec--contact .title,
+.sec--contact .description {
+  color: #002869;
+}
+.sec--contact .description {
+  font-size: 26px;
+  font-weight: 500;
+}
+.sec--contact .btns-wrap {
+  margin-top: 45px;
+}
+@media (max-width: 40rem) {
+  .sec--contact .grid-container img {
+    position: relative;
+  }
+  .sec--contact .title,
+.sec--contact .description {
+    text-align: center;
+  }
+  .sec--contact .margin-left {
+    margin-left: 0;
+  }
+  .sec--contact .padding {
+    padding: 90px 45px 45px;
+  }
 }
