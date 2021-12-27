@@ -317,7 +317,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 
 .steps {
   gap: 6px;
-  margin-top: 90px;
+  padding: 90px 0 20px;
 }
 .steps .card-steps {
   width: 324px;
@@ -376,6 +376,18 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 
 .slider {
   display: none;
+  background-color: #00AFFA;
+  height: 1px;
+}
+.slider .slider-handle {
+  width: 54px;
+  height: 8px;
+  background-color: white;
+  border-radius: 20px;
+}
+.slider .slider-fill {
+  background-color: #00AFFA;
+  height: 1px;
 }
 @media (max-width: 64rem) {
   .slider {

@@ -21,6 +21,8 @@ $(document).ready(function(){
 				  nav:false,
 				  dots:false,
 				  autoplay:false,
+				  URLhashListener:true,
+				  startPosition: 'URLHash',
 				  responsive : {
 				    // breakpoint from 0 up
 				    0 : {
