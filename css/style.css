@@ -79,6 +79,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   position: absolute;
   width: 100%;
   padding-top: 22px;
+  z-index: 2;
 }
 .header .btn {
   height: 40px;
@@ -146,6 +147,9 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.navigation ul li a.active {
+  color: #00AFFA;
 }
 .navigation .nested {
   display: none;
@@ -627,5 +631,111 @@ table td.check:before {
   }
   .sec--contact .padding {
     padding: 90px 45px 45px;
+  }
+}
+
+.solutions {
+  background-color: #012056;
+  color: white;
+}
+.solutions .sec--hero {
+  padding: 168px 0;
+  background-image: url("../images/solutions-bg.jpg");
+  height: initial;
+}
+.solutions .sec--hero .solutions-component {
+  margin: 100px 0;
+}
+.solutions .sec--contact .btns-wrap:before, .solutions .sec--contact .btns-wrap:after {
+  content: none;
+}
+@media (max-width: 40rem) {
+  .solutions .sec {
+    padding: 50px 0;
+  }
+  .solutions .sec--hero {
+    padding: 168px 0 50px;
+  }
+  .solutions .sec--hero .solutions-component {
+    margin: 50px 0;
+  }
+  .solutions .sec--contact {
+    padding-bottom: 0;
+  }
+}
+.solutions .btns-wrap {
+  position: relative;
+}
+.solutions .btns-wrap:before, .solutions .btns-wrap:after {
+  content: "";
+  display: block;
+  width: 290px;
+  border-bottom: 1px solid #00AFFA;
+  position: absolute;
+  top: 50%;
+}
+@media (max-width: 40rem) {
+  .solutions .btns-wrap:before, .solutions .btns-wrap:after {
+    content: none;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 25px;
+  }
+}
+.solutions .btns-wrap:after {
+  right: -310px;
+}
+.solutions .btns-wrap:before {
+  left: -310px;
+}
+.solutions .solutions-component {
+  position: relative;
+  left: -100px;
+  margin: 0 0 100px;
+}
+.solutions .solutions-component ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.solutions .solutions-component ul li {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.solutions .solutions-component ul li figure {
+  background-color: #00AFFA;
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solutions .solutions-component ul li span {
+  display: block;
+  min-width: 300px;
+}
+.solutions .solutions-component .title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.solutions .solutions-component.reverse {
+  left: initial;
+  text-align: right;
+}
+.solutions .solutions-component.reverse ul li {
+  flex-direction: row-reverse;
+}
+@media (max-width: 40rem) {
+  .solutions .solutions-component {
+    left: initial;
+    margin: 0 0 50px;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }

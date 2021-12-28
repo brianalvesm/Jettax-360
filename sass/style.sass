@@ -142,3 +142,88 @@ body
 				margin-left: 0
 			.padding
 				padding: 90px 45px 45px
+
+// Página Soluções
+// Componente - Página Soluções
+.solutions
+	background-color: #012056
+	color: white
+	.sec
+		&--hero
+			padding: 168px 0
+			background-image: url('../images/solutions-bg.jpg')
+			height: initial
+			.solutions-component
+				margin: 100px 0
+		&--contact
+			.btns-wrap
+				&:before,
+				&:after
+					content: none
+		@media (max-width: 40rem)
+			padding: 50px 0
+			&--hero
+				padding: 168px 0 50px 
+				.solutions-component
+					margin: 50px 0
+			&--contact
+				padding-bottom: 0
+	.btns-wrap
+		position: relative
+		&:before,
+		&:after
+			content: ""
+			display: block
+			width: 290px
+			border-bottom: 1px solid $blue-light
+			position: absolute
+			top: 50%
+			@media (max-width: 40rem)
+				content: none
+				width: 100%
+				right: 0
+				left: 0
+				top: 25px
+		&:after
+			right: -310px
+		&:before
+			left: -310px
+	.solutions-component
+		position: relative
+		left: -100px
+		margin: 0 0 100px
+		ul
+			margin: 0
+			display: flex
+			flex-direction: column
+			gap: 30px
+			li
+				list-style: none
+				display: flex
+				gap: 30px
+				align-items: center
+				figure
+					background-color: $blue-light
+					min-width: 60px
+					width: 60px
+					height: 60px
+					border-radius: 20px
+					display: flex
+					align-items: center
+					justify-content: center
+				span
+					display: block
+					min-width: 300px
+		.title
+			font-size: 32px
+			margin-bottom: 40px
+		&.reverse
+			left: initial
+			text-align: right
+			ul li
+				flex-direction: row-reverse
+		@media (max-width: 40rem)
+			left: initial
+			margin: 0 0 50px
+			flex-wrap: wrap
+			gap: 30px
