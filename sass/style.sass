@@ -227,3 +227,24 @@ body
 			margin: 0 0 50px
 			flex-wrap: wrap
 			gap: 30px
+
+// Página Planos
+.plans .sec
+	&--hero
+		background-image: none
+		position: relative
+		.title
+			margin-bottom: 70px
+		img
+			position: absolute
+			top: 50%
+			margin-top: -190px
+			@media (max-width: 64rem)
+				position: relative
+				top: initial
+				margin-top: 0
+	&--plans
+		background-color: $gray
+		.title
+			color: $blue-dark
+			margin-bottom: 50px

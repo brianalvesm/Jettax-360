@@ -363,3 +363,92 @@ table
 		width: 100%
 		gap: 60px
 		padding: 40px 20px 0 
+
+// Planos
+.card-plans
+	background-color: white
+	display: flex
+	flex-direction: column
+	gap: 12px
+	padding: 32px
+	max-width: 360px
+	border-radius: 14px
+	margin: auto
+	position: relative
+	.flex.wrap
+		gap: 5px
+		margin: 12px 0
+	.price
+		color: $blue-light
+		font-size: 48px
+		font-weight: 900
+		line-height: 1
+	.plan-title
+		font-size: 32px
+		font-weight: 700
+		color: #323232
+		width: 100%
+	.description
+		color: #969696
+		margin-bottom: 0
+	.divider
+		display: block
+		height: 1px
+		width: 100%
+		border-bottom: 1px solid #F2F2F2
+		margin: 12px 0
+	ul
+		margin: 0
+		display: flex
+		flex-direction: column
+		gap: 24px
+		li
+			list-style: none
+			text-decoration: line-through
+			position: relative
+			padding-left: 32px
+			&:before
+				position: absolute
+				left: 0
+				content: ""
+				background-image: url('../images/check-2.svg')
+				background-repeat: no-repeat
+				display: block
+				width: 24px
+				height: 24px
+			&.active
+				text-decoration: none
+			&:not(.active):before
+				background-image: url('../images/check-2-disabled.svg')
+	.btns-wrap
+		flex-direction: column
+		position: relative
+		bottom: -130px
+		margin: auto
+	.btn
+		&--style1
+			background-color: white
+	&.highlighted
+		background-color: $blue-dark
+		top: -10px
+		.plan-title
+			color: $blue-light
+		.period,
+		.description,
+		ul li
+			color: white
+		.btn
+			&--style1
+				color: $blue-dark
+				border: 1px solid $blue-dark
+			&--style2
+				background-color: $blue-dark
+
+.plans-wrap
+	display: flex
+	gap: 16px
+	flex-wrap: wrap
+	@media (max-width: 40rem)
+		flex-direction: column
+	@media (max-width: 64rem)
+		gap: 140px

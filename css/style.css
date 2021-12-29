@@ -460,6 +460,117 @@ table td.check:before {
   }
 }
 
+.card-plans {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  max-width: 360px;
+  border-radius: 14px;
+  margin: auto;
+  position: relative;
+}
+.card-plans .flex.wrap {
+  gap: 5px;
+  margin: 12px 0;
+}
+.card-plans .price {
+  color: #00AFFA;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+}
+.card-plans .plan-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #323232;
+  width: 100%;
+}
+.card-plans .description {
+  color: #969696;
+  margin-bottom: 0;
+}
+.card-plans .divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #F2F2F2;
+  margin: 12px 0;
+}
+.card-plans ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card-plans ul li {
+  list-style: none;
+  text-decoration: line-through;
+  position: relative;
+  padding-left: 32px;
+}
+.card-plans ul li:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-image: url("../images/check-2.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.card-plans ul li.active {
+  text-decoration: none;
+}
+.card-plans ul li:not(.active):before {
+  background-image: url("../images/check-2-disabled.svg");
+}
+.card-plans .btns-wrap {
+  flex-direction: column;
+  position: relative;
+  bottom: -130px;
+  margin: auto;
+}
+.card-plans .btn--style1 {
+  background-color: white;
+}
+.card-plans.highlighted {
+  background-color: #002869;
+  top: -10px;
+}
+.card-plans.highlighted .plan-title {
+  color: #00AFFA;
+}
+.card-plans.highlighted .period,
+.card-plans.highlighted .description,
+.card-plans.highlighted ul li {
+  color: white;
+}
+.card-plans.highlighted .btn--style1 {
+  color: #002869;
+  border: 1px solid #002869;
+}
+.card-plans.highlighted .btn--style2 {
+  background-color: #002869;
+}
+
+.plans-wrap {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+@media (max-width: 40rem) {
+  .plans-wrap {
+    flex-direction: column;
+  }
+}
+@media (max-width: 64rem) {
+  .plans-wrap {
+    gap: 140px;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -738,4 +849,31 @@ table td.check:before {
     flex-wrap: wrap;
     gap: 30px;
   }
+}
+
+.plans .sec--hero {
+  background-image: none;
+  position: relative;
+}
+.plans .sec--hero .title {
+  margin-bottom: 70px;
+}
+.plans .sec--hero img {
+  position: absolute;
+  top: 50%;
+  margin-top: -190px;
+}
+@media (max-width: 64rem) {
+  .plans .sec--hero img {
+    position: relative;
+    top: initial;
+    margin-top: 0;
+  }
+}
+.plans .sec--plans {
+  background-color: #F5F3F3;
+}
+.plans .sec--plans .title {
+  color: #002869;
+  margin-bottom: 50px;
 }
