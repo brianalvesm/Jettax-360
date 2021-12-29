@@ -871,9 +871,26 @@ table td.check:before {
   }
 }
 .plans .sec--plans {
+  padding-bottom: 200px;
   background-color: #F5F3F3;
 }
 .plans .sec--plans .title {
   color: #002869;
   margin-bottom: 50px;
+}
+.plans .sec--banner {
+  background-image: url("../images/plans-banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.plans .sec--banner .title,
+.plans .sec--banner .description {
+  margin-bottom: 0;
+}
+.plans .sec--benefits .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #002869;
 }
