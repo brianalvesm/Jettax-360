@@ -148,7 +148,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   font-weight: 700;
   text-transform: uppercase;
 }
-.navigation ul li a.active {
+.navigation ul li a:hover, .navigation ul li a.active {
   color: #00AFFA;
 }
 .navigation .nested {
@@ -608,7 +608,7 @@ table td.check:before {
 }
 @media (max-width: 40rem) {
   .margin-left {
-    margin-left: 20px;
+    margin-left: initial;
   }
 }
 
@@ -879,7 +879,7 @@ table td.check:before {
   margin-bottom: 50px;
 }
 .plans .sec--banner {
-  background-image: url("../images/plans-banner.svg");
+  background-image: url("../images/plans-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -892,5 +892,33 @@ table td.check:before {
 .plans .sec--benefits .title {
   font-size: 28px;
   font-weight: 600;
+  color: #002869;
+}
+.plans .sec--benefits .benefits-component ul {
+  margin: 85px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.plans .sec--benefits .benefits-component ul li {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.plans .sec--benefits .benefits-component ul li figure {
+  background-color: #00AFFA;
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans .sec--benefits .benefits-component ul li span {
+  display: block;
+  min-width: 300px;
+  text-transform: uppercase;
   color: #002869;
 }

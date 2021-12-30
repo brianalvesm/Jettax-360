@@ -39,7 +39,7 @@ body
 .margin-left
 	margin-left: 40px
 	@media (max-width: 40rem)
-		margin-left: 20px
+		margin-left: initial
 
 // Sections
 .sec
@@ -251,7 +251,7 @@ body
 			margin-bottom: 50px
 	&--banner
 		background:
-			image: url('../images/plans-banner.svg')
+			image: url('../images/plans-banner.jpg')
 			repeat: no-repeat
 			size: cover
 			position: center
@@ -264,3 +264,28 @@ body
 			font-size: 28px
 			font-weight: 600
 			color: $blue-dark
+		.benefits-component
+			ul
+				margin: 85px 0 0
+				display: flex
+				flex-direction: column
+				gap: 30px
+				li
+					list-style: none
+					display: flex
+					gap: 30px
+					align-items: center
+					figure
+						background-color: $blue-light
+						min-width: 60px
+						width: 60px
+						height: 60px
+						border-radius: 20px
+						display: flex
+						align-items: center
+						justify-content: center
+					span
+						display: block
+						min-width: 300px
+						text-transform: uppercase
+						color: $blue-dark
