@@ -13,9 +13,10 @@
 	font-weight: 900
 	font-size: 16px
 	border-radius: 25px
+	line-height: 1.2
 	@include transition(0.3s)
 	&--style1
-		border: 1px solid $blue-light
+		border: 2px solid $blue-light
 		color: $blue-light
 	&--style2
 		background-color: $blue-light
@@ -254,6 +255,8 @@
 .steps
 	gap: 6px
 	padding: 90px 0 20px
+	.owl-item
+		max-width: 324px
 	.card-steps
 		width: 324px
 		height: 324px
@@ -302,7 +305,7 @@
 	overflow: visible
 
 .slider
-	display: none
+	display: block
 	background-color: $blue-light
 	height: 1px
 	.slider-handle
@@ -313,8 +316,6 @@
 	.slider-fill
 		background-color: $blue-light
 		height: 1px
-	@media (max-width: 64rem)
-		display: block
 
 .tables-wrap
 	flex-direction: column

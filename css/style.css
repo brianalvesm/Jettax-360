@@ -21,6 +21,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   font-weight: 900;
   font-size: 16px;
   border-radius: 25px;
+  line-height: 1.2;
   -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
@@ -28,7 +29,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .btn--style1 {
-  border: 1px solid #00AFFA;
+  border: 2px solid #00AFFA;
   color: #00AFFA;
 }
 .btn--style2 {
@@ -323,6 +324,9 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   gap: 6px;
   padding: 90px 0 20px;
 }
+.steps .owl-item {
+  max-width: 324px;
+}
 .steps .card-steps {
   width: 324px;
   height: 324px;
@@ -379,7 +383,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 }
 
 .slider {
-  display: none;
+  display: block;
   background-color: #00AFFA;
   height: 1px;
 }
@@ -392,11 +396,6 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .slider .slider-fill {
   background-color: #00AFFA;
   height: 1px;
-}
-@media (max-width: 64rem) {
-  .slider {
-    display: block;
-  }
 }
 
 .tables-wrap {
@@ -682,6 +681,9 @@ table td.check:before {
 .sec--howitworks {
   overflow: hidden;
   background-color: #002869;
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px top 70px;
 }
 .sec--howitworks .title {
   color: white;
@@ -741,7 +743,7 @@ table td.check:before {
     margin-left: 0;
   }
   .sec--contact .padding {
-    padding: 90px 45px 45px;
+    padding: 90px 0;
   }
 }
 
@@ -750,7 +752,7 @@ table td.check:before {
   color: white;
 }
 .solutions .sec--hero {
-  padding: 168px 0;
+  padding: 168px 0 100px;
   background-image: url("../images/solutions-bg.jpg");
   height: initial;
 }
@@ -773,6 +775,9 @@ table td.check:before {
   .solutions .sec--contact {
     padding-bottom: 0;
   }
+}
+.solutions .sec.no-padding {
+  padding: 0;
 }
 .solutions .btns-wrap {
   position: relative;
@@ -831,6 +836,11 @@ table td.check:before {
   display: block;
   min-width: 300px;
 }
+@media (max-width: 40rem) {
+  .solutions .solutions-component ul li span {
+    min-width: initial;
+  }
+}
 .solutions .solutions-component .title {
   font-size: 32px;
   margin-bottom: 40px;
@@ -838,6 +848,7 @@ table td.check:before {
 .solutions .solutions-component.reverse {
   left: initial;
   text-align: right;
+  justify-content: end;
 }
 .solutions .solutions-component.reverse ul li {
   flex-direction: row-reverse;
