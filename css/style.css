@@ -749,7 +749,8 @@ table td.check:before {
 
 .solutions .sec--hero,
 .plans .sec--hero,
-.blog .sec--hero {
+.blog .sec--hero,
+.contact .sec--hero {
   padding: 168px 0 100px;
 }
 
@@ -972,4 +973,31 @@ table td.check:before {
 .post-featured figcaption {
   max-width: 492px;
   margin-top: 30px;
+}
+
+.contact .sec--hero {
+  background-image: none;
+  height: initial;
+}
+.contact .sec--hero .card {
+  border-radius: 20px;
+  border: none;
+  background-color: #0160A7;
+  position: relative;
+  height: 420px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 68px;
+  overflow: visible;
+}
+.contact .sec--hero .card img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -300px;
+}
+.contact .sec--hero .title {
+  font-size: 32px;
+  color: white;
+  max-width: 400px;
 }
