@@ -104,6 +104,10 @@ body
 		background-position: right 20px top 70px
 		.title
 			color: white
+		.grid-container
+			// margin-right: 0
+			// max-width: 100%
+			// overflow-x: auto
 	&--table
 		background-color: $gray
 		.title,
@@ -146,6 +150,13 @@ body
 			.padding
 				padding: 90px 0
 
+// Espaçamento padrão no topo do hero das páginas internas
+.solutions,
+.plans,
+.blog
+	.sec--hero
+		padding: 168px 0 100px
+
 // Página Soluções
 // Componente - Página Soluções
 .solutions
@@ -153,7 +164,6 @@ body
 	color: white
 	.sec
 		&--hero
-			padding: 168px 0 100px
 			background-image: url('../images/solutions-bg.jpg')
 			height: initial
 			.solutions-component
@@ -297,3 +307,30 @@ body
 						min-width: 300px
 						text-transform: uppercase
 						color: $blue-dark
+
+// Página Blog
+.blog .sec
+	&--hero
+		height: initial
+		background-image: url('../images/blog-bg.jpg')
+		background-size: contain
+		background-position: top
+		background-color: $blue-darker
+		.grid-x:nth-child(n+2)
+			margin-top: 80px
+			@media (min-width: 40rem) and (max-width: 64rem)
+				.cell:first-child
+					padding-right: 20px
+			@media (max-width: 40rem)
+				margin-top: initial
+				.cell
+					margin-top: 40px
+
+.post-headline
+	font-size: 28px
+	font-weight: 800
+	margin-bottom: 20px
+	
+.post-featured figcaption
+	max-width: 492px
+	margin-top: 30px

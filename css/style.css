@@ -747,12 +747,17 @@ table td.check:before {
   }
 }
 
+.solutions .sec--hero,
+.plans .sec--hero,
+.blog .sec--hero {
+  padding: 168px 0 100px;
+}
+
 .solutions {
   background-color: #012056;
   color: white;
 }
 .solutions .sec--hero {
-  padding: 168px 0 100px;
   background-image: url("../images/solutions-bg.jpg");
   height: initial;
 }
@@ -932,4 +937,39 @@ table td.check:before {
   min-width: 300px;
   text-transform: uppercase;
   color: #002869;
+}
+
+.blog .sec--hero {
+  height: initial;
+  background-image: url("../images/blog-bg.jpg");
+  background-size: contain;
+  background-position: top;
+  background-color: #002056;
+}
+.blog .sec--hero .grid-x:nth-child(n+2) {
+  margin-top: 80px;
+}
+@media (min-width: 40rem) and (max-width: 64rem) {
+  .blog .sec--hero .grid-x:nth-child(n+2) .cell:first-child {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 40rem) {
+  .blog .sec--hero .grid-x:nth-child(n+2) {
+    margin-top: initial;
+  }
+  .blog .sec--hero .grid-x:nth-child(n+2) .cell {
+    margin-top: 40px;
+  }
+}
+
+.post-headline {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.post-featured figcaption {
+  max-width: 492px;
+  margin-top: 30px;
 }
