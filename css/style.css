@@ -1001,3 +1001,32 @@ table td.check:before {
   color: white;
   max-width: 400px;
 }
+.contact .sec--faq {
+  background-color: #002869;
+}
+
+.accordion {
+  background-color: transparent;
+}
+.accordion .accordion-item {
+  padding: 2px 0;
+}
+.accordion .accordion-item.is-active .accordion-title {
+  border-radius: 20px 20px 0 0;
+}
+.accordion .accordion-item .accordion-title {
+  background-color: white;
+  color: #002869;
+  font-size: 21px;
+  font-weight: 900;
+  padding: 28px 46px;
+  border: none;
+  border-radius: 20px;
+}
+.accordion .accordion-item .accordion-content {
+  background-color: #0160A7;
+  color: white;
+  padding: 46px;
+  border: none;
+  border-radius: 0 0 20px 20px;
+}

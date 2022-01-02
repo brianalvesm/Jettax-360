@@ -41,7 +41,7 @@ body
 	@media (max-width: 40rem)
 		margin-left: initial
 
-// Sections
+// Página Inicial
 .sec
 	padding: 100px 0
 	&--hero
@@ -360,3 +360,27 @@ body
 			font-size: 32px
 			color: white
 			max-width: 400px
+	&--faq
+		background-color: $blue-dark
+
+// Componente - Accordion
+.accordion
+	background-color: transparent
+	.accordion-item
+		padding: 2px 0
+		&.is-active .accordion-title
+			border-radius: 20px 20px 0 0
+		.accordion-title
+			background-color: white
+			color: $blue-dark
+			font-size: 21px
+			font-weight: 900
+			padding: 28px 46px
+			border: none
+			border-radius: 20px
+		.accordion-content
+			background-color: $blue-medium
+			color: white
+			padding: 46px
+			border: none
+			border-radius: 0 0 20px 20px
