@@ -692,6 +692,11 @@ table td.check:before {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom right;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .sec--solutions.one {
   background-image: url("../images/solutions-bg.svg");
