@@ -14,7 +14,7 @@
 	font-size: 16px
 	border-radius: 25px
 	line-height: 1.2
-	@include transition(0.3s)
+	@include transition($transition-duration)
 	&--style1
 		border: 2px solid $blue-light
 		color: $blue-light
@@ -119,7 +119,7 @@
 		padding: 25px 20px
 		gap: 20px
 		flex-direction: column
-		@include transition(0.3s)
+		@include transition($transition-duration)
 		a
 			display: block
 			width: max-content
@@ -196,6 +196,7 @@
 		background-color: #F5F3F3
 		position: relative
 		overflow: visible
+		@include  transition($transition-duration)
 		svg
 			content: ''
 			display: block
@@ -209,13 +210,16 @@
 			background-size: contain
 			rect
 				fill: #A3E3FF
+				@include  transition($transition-duration)
 		.card-title
 			font-weight: 700
 			font-size: 24px
 			color: #A3E3FF
+			@include  transition($transition-duration)
 		span
 			font-size: 14px
 			color: #353434
+			@include  transition($transition-duration)
 		&.active
 			background-color: white
 			svg
