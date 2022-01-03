@@ -635,6 +635,11 @@ table td.check:before {
   font-weight: 500;
   margin: 30px auto 45px;
 }
+@media (max-width: 40rem) {
+  .sec--hero {
+    height: initial;
+  }
+}
 .sec--about {
   background-color: #0160A7;
   color: white;
@@ -667,6 +672,15 @@ table td.check:before {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom right;
+}
+.sec--solutions.one {
+  background-image: url("../images/solutions-bg.svg");
+}
+.sec--solutions.two {
+  background-image: url("../images/solutions-bg-2.svg");
+}
+.sec--solutions.three {
+  background-image: url("../images/solutions-bg-3.svg");
 }
 @media (max-width: 64rem) {
   .sec--solutions {

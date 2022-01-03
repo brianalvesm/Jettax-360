@@ -63,6 +63,8 @@ body
 			font-size: 18px
 			font-weight: 500
 			margin: 30px auto 45px
+		@media (max-width: 40rem)
+			height: initial
 	&--about
 		background-color: $blue-medium
 		color: white
@@ -89,6 +91,12 @@ body
 			repeat: no-repeat
 			size: auto
 			position: bottom right
+		&.one
+			background-image: url('../images/solutions-bg.svg')
+		&.two
+			background-image: url('../images/solutions-bg-2.svg')
+		&.three
+			background-image: url('../images/solutions-bg-3.svg')
 		@media (max-width: 64rem)
 			background:
 				image: url('../images/solutions-bg-small.svg')
