@@ -1,5 +1,7 @@
 $(document).foundation();
 
+var Sheepbar = new Sheepbar();
+
 $(document).ready(function(){
 	(function ($) {
 
