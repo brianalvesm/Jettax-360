@@ -345,9 +345,6 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   gap: 6px;
   padding: 90px 0 40px;
 }
-.steps .owl-item {
-  max-width: 324px;
-}
 .steps .card-steps {
   width: 324px;
   height: 324px;
@@ -383,6 +380,12 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .steps .card-steps.step-04:before {
   content: "04";
 }
+.steps .card-steps.step-05:before {
+  content: "05";
+}
+.steps .card-steps.step-06:before {
+  content: "06";
+}
 .steps .step-title {
   font-size: 20px;
   font-weight: 800;
@@ -391,36 +394,9 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   align-items: center;
   gap: 20px;
 }
-@media (max-width: 64rem) {
-  .steps .card-steps {
-    width: 100%;
-    padding: 100px 25px 25px;
-    gap: 25px;
-  }
-}
-
-.owl-howitworks.owl-carousel .owl-stage-outer {
-  overflow: visible;
-}
-
-.slider {
-  display: block;
-  background-color: #00AFFA;
-  height: 1px;
-}
-.slider .slider-handle {
-  width: 54px;
-  height: 8px;
-  background-color: white;
-  border-radius: 20px;
-}
-.slider .slider-fill {
-  background-color: #00AFFA;
-  height: 1px;
-}
 
 .sheepbar {
-  height: 460px;
+  height: 500px;
 }
 .sheepbar > .sheepbar-scrollbar {
   width: 100%;
@@ -439,6 +415,20 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   border-radius: 20px;
   cursor: pointer;
   z-index: 1;
+  overflow: visible;
+  margin-bottom: 40px;
+}
+.sheepbar > .sheepbar-scrollbar > div:after {
+  content: "";
+  background-image: url("../images/hand.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 27px;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  margin-left: -13px;
 }
 .sheepbar:after {
   content: "";
@@ -446,7 +436,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   position: absolute;
   width: 100%;
   height: 1px;
-  bottom: 4px;
+  bottom: 44px;
   z-index: 0;
   background-color: #00AFFA;
 }
