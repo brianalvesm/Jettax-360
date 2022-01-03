@@ -7,6 +7,7 @@ body
 
 // Typography
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap')
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css')
 
 @import "mixins"
 @import "variables"
@@ -360,6 +361,16 @@ body
 			font-size: 32px
 			color: white
 			max-width: 400px
+		@media (max-width: 64rem)
+			.card
+				flex-direction: column
+				height: initial
+				padding: 34px 34px 260px
+				img
+					width: 390px
+					margin-left: -195px
+			.title
+				font-size: 20px
 	&--faq
 		background-color: $blue-dark
 
@@ -368,8 +379,10 @@ body
 	background-color: transparent
 	.accordion-item
 		padding: 2px 0
-		&.is-active .accordion-title
+		&.is-active > .accordion-title
 			border-radius: 20px 20px 0 0
+			&::before
+				content: "\f077"
 		.accordion-title
 			background-color: white
 			color: $blue-dark
@@ -378,6 +391,10 @@ body
 			padding: 28px 46px
 			border: none
 			border-radius: 20px
+			&:before
+				font-family: "Font Awesome 5 Pro"
+				content: "\f078"
+				color: $blue-light
 		.accordion-content
 			background-color: $blue-medium
 			color: white

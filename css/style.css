@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;700;800&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 body {
   font-family: "Exo", sans-serif;
 }
@@ -1001,6 +1002,20 @@ table td.check:before {
   color: white;
   max-width: 400px;
 }
+@media (max-width: 64rem) {
+  .contact .sec--hero .card {
+    flex-direction: column;
+    height: initial;
+    padding: 34px 34px 260px;
+  }
+  .contact .sec--hero .card img {
+    width: 390px;
+    margin-left: -195px;
+  }
+  .contact .sec--hero .title {
+    font-size: 20px;
+  }
+}
 .contact .sec--faq {
   background-color: #002869;
 }
@@ -1011,8 +1026,11 @@ table td.check:before {
 .accordion .accordion-item {
   padding: 2px 0;
 }
-.accordion .accordion-item.is-active .accordion-title {
+.accordion .accordion-item.is-active > .accordion-title {
   border-radius: 20px 20px 0 0;
+}
+.accordion .accordion-item.is-active > .accordion-title::before {
+  content: "\f077";
 }
 .accordion .accordion-item .accordion-title {
   background-color: white;
@@ -1022,6 +1040,11 @@ table td.check:before {
   padding: 28px 46px;
   border: none;
   border-radius: 20px;
+}
+.accordion .accordion-item .accordion-title:before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f078";
+  color: #00AFFA;
 }
 .accordion .accordion-item .accordion-content {
   background-color: #0160A7;
