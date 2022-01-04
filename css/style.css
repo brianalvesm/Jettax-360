@@ -78,10 +78,15 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding-top: 22px;
   z-index: 2;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .header .btn {
   height: 40px;
@@ -103,6 +108,15 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .header.active .title-bar .menu-icon::after {
   background: #00AFFA;
   box-shadow: 0 7px 0 #00AFFA, 0 14px 0 #00AFFA;
+}
+.header.scroll {
+  background-color: #002869;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 @media (max-width: 40rem) {
   .header {

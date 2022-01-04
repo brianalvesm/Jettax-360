@@ -53,10 +53,11 @@
 
 // Header
 .header
-	position: absolute
+	position: fixed
 	width: 100%
 	padding-top: 22px
 	z-index: 2
+	@include transition($transition-duration)
 	.btn
 		height: 40px
 		padding: 0 17px
@@ -73,6 +74,10 @@
 		.title-bar .menu-icon::after
 			background: $blue-light
 			box-shadow: 0 7px 0 $blue-light, 0 14px 0 $blue-light
+	&.scroll
+		background-color: $blue-dark
+		padding-bottom: 22px
+		@include transition($transition-duration)
 	@media (max-width: 40rem)
 		padding-bottom: 50px
 		.btn
@@ -281,19 +286,6 @@
 		display: flex
 		align-items: center
 		gap: 20px
-
-// .slider
-// 	display: block
-// 	background-color: $blue-light
-// 	height: 1px
-// 	.slider-handle
-// 		width: 54px
-// 		height: 8px
-// 		background-color: white
-// 		border-radius: 20px
-// 	.slider-fill
-// 		background-color: $blue-light
-// 		height: 1px
 
 .sheepbar
 	height: 500px
