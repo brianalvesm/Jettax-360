@@ -2,18 +2,20 @@
 .title
 	font-size: 32px
 	font-weight: 800
+	@media (max-width: 40rem)
+		font-size: 28px
 
 .btn
 	display: inline-flex
-	align-items: center
+	// align-items: center
 	justify-content: center
 	height: 50px
 	min-width: 215px
-	padding: 0 22px
+	padding: 13px 22px
 	font-weight: 900
 	font-size: 16px
 	border-radius: 25px
-	line-height: 1.2
+	// line-height: 1.2
 	@include transition($transition-duration)
 	&--style1
 		border: 2px solid $blue-light
@@ -60,7 +62,7 @@
 	@include transition($transition-duration)
 	.btn
 		height: 40px
-		padding: 0 17px
+		padding: 10px 17px
 		min-width: 138px
 		font-size: 12px 
 		text-transform: uppercase
@@ -350,6 +352,7 @@ table
 		font-size: 24px
 		font-weight: 700
 		text-transform: uppercase
+		border: none
 	th, td
 		padding: 0 60px
 	td

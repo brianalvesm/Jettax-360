@@ -42,27 +42,19 @@ body
 	@media (max-width: 40rem)
 		margin-left: initial
 
-// .overflow-x-scroll
-// 	overflow-x: scroll
-// 	/* width */
-// 	&::-webkit-scrollbar
-// 		border-radius: 20px
-// 		height: 7px
-// 		overflow: visible
+@media (max-width: 40rem)
+	br
+		display: none
 
-// 	/* Track */
-// 	&::-webkit-scrollbar-track
-// 		background: $blue-light
-// 		border-radius: 20px
-
-// 	/* Handle */
-// 	&::-webkit-scrollbar-thumb
-// 		background: white
-// 		border-radius: 20px
+.sec
+	padding: 100px 0
+	@media (max-width: 40rem)
+		padding: 50px 0
+		&.sec--hero
+			padding: 100px 0
 
 // Página Inicial
 .sec
-	padding: 100px 0
 	&--hero
 		display: flex
 		background:
@@ -73,16 +65,38 @@ body
 			color: $blue-dark
 		color: white
 		height: 800px
+		position: relative
+		overflow: hidden
 		.title
 			font-family: 'Exo 2'
 			font-size: 42px
 			line-height: 1.1
+			max-width: 555px
 		.description
 			font-size: 18px
 			font-weight: 500
-			margin: 30px auto 45px
+			margin: 30px 0 45px
+			max-width: 445px
 		@media (max-width: 40rem)
 			height: initial
+			&:before
+				content: ""
+				background-image: url('../images/pattern-bg.svg')
+				background-repeat: no-repeat
+				display: block
+				width: 136px
+				height: 136px
+				position: absolute
+				bottom: -24px
+				right: -24px
+				z-index: 0
+			.cell
+				z-index: 1
+			.title
+				font-size: 36px
+			.btn
+				min-width: unset
+				width: 286px
 	&--about
 		background-color: $blue-medium
 		color: white
@@ -119,11 +133,19 @@ body
 		@media (max-width: 64rem)
 			background:
 				image: url('../images/solutions-bg-small.svg')
-				position: bottom center
+				position: bottom -7px center
+				size: contain
 			padding-bottom: 268px
+			&.one
+				background-image: url('../images/solutions-bg-small.svg')
+			&.two
+				background-image: url('../images/solutions-bg-2-small.svg')
+			&.three
+				background-image: url('../images/solutions-bg-3-small.svg')
 		.title
 			color: $blue-dark
 			margin-bottom: 68px
+			max-width: 835px
 	&--howitworks
 		overflow: hidden
 		background-color: $blue-dark
@@ -150,7 +172,7 @@ body
 			color: white
 	&--contact
 		background-color: $gray
-		padding: 0
+		padding: 0 !important
 		.padding
 			padding: 140px 0
 		.grid-container
@@ -176,15 +198,7 @@ body
 			.margin-left
 				margin-left: 0
 			.padding
-				padding: 90px 0
-
-// Espaçamento padrão no topo do hero das páginas internas
-.solutions,
-.plans,
-.blog,
-.contact
-	.sec--hero
-		padding: 168px 0 100px
+				padding: 50px 0
 
 // Página Soluções
 // Componente - Página Soluções
@@ -205,7 +219,6 @@ body
 		@media (max-width: 40rem)
 			padding: 50px 0
 			&--hero
-				padding: 168px 0 50px 
 				.solutions-component
 					margin: 50px 0
 			&--contact
@@ -274,6 +287,11 @@ body
 			margin: 0 0 50px
 			flex-wrap: wrap
 			gap: 30px
+			&.reverse
+				text-align: initial
+				justify-content: unset
+				ul li
+					flex-direction: row
 
 // Página Planos
 .plans .sec
@@ -286,10 +304,13 @@ body
 			position: absolute
 			top: 50%
 			margin-top: -190px
-			@media (max-width: 64rem)
+		@media (max-width: 64rem)
+			.title
+				font-size: 34px
+			img
 				position: relative
 				top: initial
-				margin-top: 0
+				margin-top: 20px
 	&--plans
 		padding-bottom: 200px
 		background-color: $gray
@@ -336,6 +357,10 @@ body
 						min-width: 300px
 						text-transform: uppercase
 						color: $blue-dark
+				@media (max-width: 40rem)
+					margin: 50px 0 0
+					li span
+						min-width: unset
 
 // Página Blog
 .blog .sec
@@ -428,3 +453,13 @@ body
 			padding: 46px
 			border: none
 			border-radius: 0 0 20px 20px
+
+// Espaçamento padrão no topo do hero das páginas internas
+.solutions,
+.plans,
+.blog,
+.contact
+	.sec--hero
+		padding: 168px 0 100px
+		@media (max-width: 40rem)
+			padding: 100px 0

@@ -1,7 +1,5 @@
 $(document).foundation();
 
-var Sheepbar = new Sheepbar();
-
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 50) {
     $(".header").addClass("scroll");
@@ -41,3 +39,5 @@ $(document).ready(function(){
 
 	})(jQuery);
 });
+
+var Sheepbar = new Sheepbar();
