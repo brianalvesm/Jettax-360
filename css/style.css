@@ -105,6 +105,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   background: transparent;
 }
 .header.active {
+  position: absolute;
   background-color: #002869;
 }
 .header.active .title-bar .menu-icon:hover::after,
