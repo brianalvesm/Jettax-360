@@ -424,7 +424,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   overflow: visible;
 }
 .sheepbar > .sheepbar-scrollbar > div {
-  width: 300px;
+  width: 60px;
   height: 8px;
   bottom: 0;
   left: 65px;
@@ -447,11 +447,6 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   top: 20px;
   left: 50%;
   margin-left: -13px;
-}
-@media (max-width: 40rem) {
-  .sheepbar > .sheepbar-scrollbar > div {
-    width: 60px;
-  }
 }
 .sheepbar:after {
   content: "";
@@ -711,7 +706,6 @@ table td.check:before {
   font-family: "Exo 2";
   font-size: 42px;
   line-height: 1.1;
-  max-width: 555px;
 }
 .sec--hero .description {
   font-size: 18px;
