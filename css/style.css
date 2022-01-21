@@ -110,7 +110,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .header.active {
   position: fixed;
   overflow-y: auto;
-  max-height: 40rem;
+  max-height: 100vh;
   background-color: #002869;
 }
 .header.active .title-bar .menu-icon:hover::after,
