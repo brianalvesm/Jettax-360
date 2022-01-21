@@ -108,7 +108,9 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   background: transparent;
 }
 .header.active {
-  position: absolute;
+  position: fixed;
+  overflow-y: auto;
+  max-height: 40rem;
   background-color: #002869;
 }
 .header.active .title-bar .menu-icon:hover::after,
@@ -135,6 +137,10 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   }
   .header .flex.wrap {
     gap: 1rem;
+    text-align: center;
+  }
+  .header br {
+    display: block !important;
   }
 }
 
