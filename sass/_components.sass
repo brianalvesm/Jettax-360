@@ -216,9 +216,8 @@
 		position: relative
 		overflow: visible
 		@include  transition($transition-duration)
-		svg
-			content: ''
-			display: block
+		.icons-svg
+			display: flex
 			position: absolute
 			z-index: 1
 			top: 0
@@ -227,9 +226,11 @@
 			height: 60px
 			background-repeat: no-repeat
 			background-size: contain
-			rect
-				fill: #A3E3FF
-				@include  transition($transition-duration)
+			align-items: center
+			justify-content: center
+			border-radius: 20px
+			background-color: #A3E3FF
+			@include  transition($transition-duration)
 		.card-title
 			font-weight: 700
 			font-size: 24px
@@ -244,9 +245,8 @@
 		&.active
 			// background-color: white
 			background-color: $blue-darker
-			svg
-				rect
-					fill: $blue-light
+			.icons-svg
+				background-color: $blue-light
 			.card-title
 				// color: $blue-dark
 				color: $blue-light

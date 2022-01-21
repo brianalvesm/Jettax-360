@@ -308,9 +308,8 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
-.cards-wrap .card svg {
-  content: "";
-  display: block;
+.cards-wrap .card .icons-svg {
+  display: flex;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -319,9 +318,10 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   height: 60px;
   background-repeat: no-repeat;
   background-size: contain;
-}
-.cards-wrap .card svg rect {
-  fill: #A3E3FF;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #A3E3FF;
   -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
@@ -350,8 +350,8 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .cards-wrap .card.active {
   background-color: #002056;
 }
-.cards-wrap .card.active svg rect {
-  fill: #00AFFA;
+.cards-wrap .card.active .icons-svg {
+  background-color: #00AFFA;
 }
 .cards-wrap .card.active .card-title {
   color: #00AFFA;
